@@ -1,0 +1,72 @@
+Index: chapter5/src/main/java/com/course/testng/suite/LoginTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- chapter5/src/main/java/com/course/testng/suite/LoginTest.java	(date 1644468653688)
++++ chapter5/src/main/java/com/course/testng/suite/LoginTest.java	(date 1644468653688)
+@@ -0,0 +1,4 @@
++package com.course.testng.suite;
++
++public class LoginTest {
++}
+Index: chapter5/chapter5.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule=\"true\" type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_1_5\">\r\n    <output url=\"file://$MODULE_DIR$/../chapter5/target/classes\" />\r\n    <output-test url=\"file://$MODULE_DIR$/../chapter5/target/test-classes\" />\r\n    <content url=\"file://$MODULE_DIR$/../chapter5\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/../chapter5/src/main/java\" isTestSource=\"false\" />\r\n      <sourceFolder url=\"file://$MODULE_DIR$/../chapter5/src/main/resources\" type=\"java-resource\" />\r\n      <sourceFolder url=\"file://$MODULE_DIR$/../chapter5/src/test/java\" isTestSource=\"true\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/target\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/../chapter5/target\" />\r\n    </content>\r\n    <orderEntry type=\"jdk\" jdkName=\"1.8\" jdkType=\"JavaSDK\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.testng:testng:7.5\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: com.google.code.findbugs:jsr305:3.0.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.slf4j:slf4j-api:1.7.32\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: com.beust:jcommander:1.78\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"RUNTIME\" name=\"Maven: org.webjars:jquery:3.5.1\" level=\"project\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- chapter5/chapter5.iml	(revision 73f3b182adf71d9d60376ffecad104e7af5a6c8c)
++++ chapter5/chapter5.iml	(date 1644457321107)
+@@ -1,14 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+-    <output url="file://$MODULE_DIR$/../chapter5/target/classes" />
+-    <output-test url="file://$MODULE_DIR$/../chapter5/target/test-classes" />
+-    <content url="file://$MODULE_DIR$/../chapter5">
+-      <sourceFolder url="file://$MODULE_DIR$/../chapter5/src/main/java" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/../chapter5/src/main/resources" type="java-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/../chapter5/src/test/java" isTestSource="true" />
++    <output url="file://$MODULE_DIR$/target/classes" />
++    <output-test url="file://$MODULE_DIR$/target/test-classes" />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
++      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+       <excludeFolder url="file://$MODULE_DIR$/target" />
+-      <excludeFolder url="file://$MODULE_DIR$/../chapter5/target" />
+     </content>
+     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+@@ -17,5 +16,16 @@
+     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.32" level="project" />
+     <orderEntry type="library" name="Maven: com.beust:jcommander:1.78" level="project" />
+     <orderEntry type="library" scope="RUNTIME" name="Maven: org.webjars:jquery:3.5.1" level="project" />
++    <orderEntry type="module-library">
++      <library name="testng">
++        <CLASSES>
++          <root url="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.72/jcommander-1.72.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar!/" />
++        </CLASSES>
++        <JAVADOC />
++        <SOURCES />
++      </library>
++    </orderEntry>
+   </component>
+ </module>
+\ No newline at end of file
+Index: chapter5/src/main/java/com/course/testng/suite/SuiteConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- chapter5/src/main/java/com/course/testng/suite/SuiteConfig.java	(date 1644468653677)
++++ chapter5/src/main/java/com/course/testng/suite/SuiteConfig.java	(date 1644468653677)
+@@ -0,0 +1,4 @@
++package com.course.testng.suite;
++
++public class SuiteConfig {
++}
