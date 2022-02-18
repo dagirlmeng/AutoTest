@@ -7,8 +7,10 @@
     },
     "response": {
       "cookies": {
-        "login": "true",
-        "status": "1"
+        "login": "true"
+      },
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
       },
       "text": "恭喜你获得cookies信息成功"
     }
@@ -23,6 +25,9 @@
       }
     },
     "response": {
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
       "text": "这是一个需要携带cookies信息才能访问的get请求"
     }
   },
@@ -41,6 +46,9 @@
     },
     "response": {
       "status": 200,
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
       "json": {
         "huhansan": "success",
         "status": "1"
