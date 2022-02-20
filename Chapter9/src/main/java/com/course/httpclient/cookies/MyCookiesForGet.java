@@ -1,12 +1,12 @@
 package com.course.httpclient.cookies;
 
-import com.sun.deploy.util.SessionState;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
-import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.cookie.Cookie;
+import org.apache.http.cookie.CookieOrigin;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.cookie.BasicClientCookie;
 import org.apache.http.util.EntityUtils;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -37,10 +37,13 @@ public class MyCookiesForGet {
         //HttpClient client = new DefaultHttpClient();
         DefaultHttpClient client = new DefaultHttpClient();
         HttpResponse response = client.execute(get);
+        //将网页相应内容转换成字符串
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
         //获取cookies信息
         this.store = client.getCookieStore();
+        Cookie cookie1 = new BasicClientCookie("name2","石晓萌");
+        store.addCookie(cookie1);
         List<Cookie> getCookies = this.store.getCookies();
         for (Cookie cookie : getCookies){
             String name = cookie.getName();
