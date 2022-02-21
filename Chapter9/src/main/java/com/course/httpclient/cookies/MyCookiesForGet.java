@@ -32,10 +32,10 @@ public class MyCookiesForGet {
         String result;
         String uri = bundle.getString("getCookies.uri");
         String testUrl=url+uri;
-        HttpGet get = new HttpGet(testUrl);
         //HttpClient本身是没有获取Cookies信息的，得用DefaultHttpClient
         //HttpClient client = new DefaultHttpClient();
         DefaultHttpClient client = new DefaultHttpClient();
+        HttpGet get = new HttpGet(testUrl);
         HttpResponse response = client.execute(get);
         //将网页相应内容转换成字符串
         result = EntityUtils.toString(response.getEntity(),"utf-8");
