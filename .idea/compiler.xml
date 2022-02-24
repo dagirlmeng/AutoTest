@@ -2,14 +2,15 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Chapter10" />
         <module name="Chapter9" />
-        <module name="chapter5" />
         <module name="Chaper6" />
+        <module name="chapter5" />
+        <module name="Chapter10" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
