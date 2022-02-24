@@ -1,0 +1,7 @@
+server:
+    port: 8888
+
+logging:
+   path: logs
+   file: mylog.log
+

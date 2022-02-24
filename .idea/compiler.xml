@@ -11,12 +11,14 @@
         <module name="Chaper6" />
         <module name="chapter5" />
         <module name="Chapter10" />
+        <module name="Chapter11" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AutoTest" target="1.8" />
       <module name="Chaper6" target="1.8" />
       <module name="Chapter10" target="1.8" />
+      <module name="Chapter11" target="1.8" />
       <module name="chapter5" target="1.5" />
       <module name="Chapter9" target="1.8" />
       <module name="demo" target="1.8" />
@@ -26,6 +28,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Chaper6" options="-parameters" />
       <module name="Chapter10" options="-parameters" />
+      <module name="Chapter11" options="-parameters" />
       <module name="Chapter9" options="-parameters" />
       <module name="demo" options="-parameters" />
     </option>
