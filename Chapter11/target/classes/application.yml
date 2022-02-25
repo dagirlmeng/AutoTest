@@ -10,9 +10,9 @@ spring:
     name: myTest
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.1.178:3306/course
+    url: jdbc:mysql://1.116.239.178:3306/course
     username: root
-    pasword: Testfan#123
+    password: root@123
 
 mybatis:
   type-aliases-package: com.course.model

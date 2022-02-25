@@ -4,6 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.course">
     <select id="getUserCount" resultType="Integer">
-        select count(*) from user ;
+        select count(*) from TEST_USER;
     </select>
+    <insert id="addUser" parameterType="com.course.model.TestUser">
+        insert into TEST_USER(name,age,sex) values (#{name},#{age},#{sex});
+    </insert>
 </mapper>
