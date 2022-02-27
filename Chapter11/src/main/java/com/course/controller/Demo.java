@@ -6,10 +6,8 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 @Log4j
 @RestController
 @Api(value = "v1",description = "这是我的第一个版本的demo")
@@ -31,6 +29,15 @@ public class Demo {
     public int addUser(@RequestBody TestUser testUser){
         int result = template.insert("addUser",testUser);
         return result;
+    }
+    @RequestMapping(value = "/updateUser",method = RequestMethod.POST)
+    public int updateUser(@RequestBody TestUser testUser){
+        int result = template.insert("updateUser",testUser);
+        return result;
+    }
+    @RequestMapping(value = "deleteUser",method = RequestMethod.GET)
+    public int deleteUser(@RequestParam int id){
+        return template.delete("deleteUser",id);
     }
 }
 
