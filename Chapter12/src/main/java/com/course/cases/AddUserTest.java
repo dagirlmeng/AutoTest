@@ -43,12 +43,14 @@ public class AddUserTest {
         //设置头信息
         post.setHeader("content-type","application/json");
         StringEntity entity = new StringEntity(json.toString(),"utf-8");
+        post.setEntity(entity);
         //设置cookies
         TestConfig.defaultHttpClient.setCookieStore( TestConfig.cookieStore);
         //存放返回结果
         String result;
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         result= EntityUtils.toString(response.getEntity(),"utf-8");
+        System.out.println(result);
         return result;
     }
 }
