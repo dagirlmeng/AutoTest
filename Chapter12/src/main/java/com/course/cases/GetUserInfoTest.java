@@ -23,17 +23,20 @@ public class GetUserInfoTest {
     @Test(dependsOnGroups = "loginTrue",description = "获取userid为1的用户信息")
     public void getUserInfo() throws IOException {
         SqlSession sqlSession = DataBaseUtil.getSqlSession();
-        GetUserInfoCase getUserInfoCase  = sqlSession.selectOne("getUserInfo",1);
+        GetUserInfoCase getUserInfoCase  = sqlSession.selectOne("getUserInfoCase",1);
         System.out.println(getUserInfoCase.toString());
         System.out.println(TestConfig.getUserInfoUrl);
         //发送请求，获取结果
         JSONArray result = getResult(getUserInfoCase);
+        //结果验证
         User user = sqlSession.selectOne(getUserInfoCase.getExpected(),getUserInfoCase);
         List userList = new ArrayList();
         userList.add(user);
         JSONArray jsonArray = new JSONArray(userList);
+        //JSONArray array = new JSONArray(result.getString(0));
+        //Assert.assertEquals(jsonArray.toString(),result.toString());
         Assert.assertEquals(jsonArray,result);
-        //结果验证
+
     }
 
     private JSONArray getResult(GetUserInfoCase getUserInfoCase) throws IOException {

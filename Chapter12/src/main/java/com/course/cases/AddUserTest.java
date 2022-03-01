@@ -18,13 +18,14 @@ import java.io.IOException;
 
 public class AddUserTest {
     @Test(dependsOnGroups = "loginTrue",description = "添加用户接口测试")
-    public void addUser() throws IOException {
+    public void addUser() throws IOException, InterruptedException {
         SqlSession sqlSession = DataBaseUtil.getSqlSession();
         AddUserCase addUserCase = sqlSession.selectOne("addUserCase",1);
         System.out.println(addUserCase.toString());
         System.out.println(TestConfig.addUserUrl);
         //发请求，获取结果
         String result = getResult(addUserCase);
+        Thread.sleep(3000);
         //验证返回结果
         User user = sqlSession.selectOne("addUser",addUserCase);
         System.out.println(user.toString());
