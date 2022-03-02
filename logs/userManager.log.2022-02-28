@@ -1,0 +1,21 @@
+2022-02-28 12:44:13.291 [main] INFO  com.course.Application - Starting Application on LAPTOP-883E75JU with PID 33904 (D:\software\Git\workspace\project\AutoTest\Chapter13\target\classes started by sxm in D:\software\Git\workspace\project\AutoTest)
+2022-02-28 12:44:13.302 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2022-02-28 12:44:14.895 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2022-02-28 12:44:15.643 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-02-28 12:44:15.658 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 12:44:15.658 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-02-28 12:44:15.823 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-28 12:44:15.823 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2397 ms
+2022-02-28 12:44:16.946 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-28 12:44:17.141 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2022-02-28 12:44:17.211 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-02-28 12:44:17.233 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-02-28 12:44:17.249 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-02-28 12:44:17.585 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-02-28 12:44:17.589 [main] INFO  com.course.Application - Started Application in 5.368 seconds (JVM running for 11.081)
+2022-02-28 12:46:17.084 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-28 12:46:17.084 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-02-28 12:46:17.099 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2022-02-28 12:46:37.221 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - SpringBootDemoHikariCP - Starting...
+2022-02-28 12:46:37.225 [http-nio-8888-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-02-28 12:46:37.862 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - SpringBootDemoHikariCP - Start completed.

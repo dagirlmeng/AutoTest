@@ -37,7 +37,7 @@
             <if test="null != isDelete and '' != isDelete">
                 AND isDelete=#{isDelete}
             </if>
-        </trim>
+        </trim>;
     </select>
     <!--更新/删除用户信息,suffixOverrides尾处理-->
     <update id="updateUserInfo" parameterType="com.course.model.User">
@@ -59,6 +59,7 @@
                 isDelete=#{isDelete},
             </if>
         </trim>
+        where id=#{id};
     </update>
 
 </mapper>

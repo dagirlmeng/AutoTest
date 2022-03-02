@@ -14,6 +14,7 @@
     </test>
     <!--监听器，收集数据生成测试报告-->
     <listeners>
+        <!--加载报告可能出现样式问题-->
         <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"></listener>
     </listeners>
 </suite>

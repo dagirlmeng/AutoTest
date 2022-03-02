@@ -28,6 +28,7 @@ public class AddUserTest {
         Thread.sleep(3000);
         //验证返回结果
         User user = sqlSession.selectOne("addUser",addUserCase);
+        Thread.sleep(3000);
         System.out.println(user.toString());
         Assert.assertEquals(addUserCase.getExpected(),result);
     }
