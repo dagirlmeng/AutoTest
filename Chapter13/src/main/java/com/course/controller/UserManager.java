@@ -66,12 +66,12 @@ public class UserManager {
     @RequestMapping(value = "/getUserInfo",method = RequestMethod.POST)
     public List<User> getUserInfo(HttpServletRequest request,@RequestBody User user){
         Boolean x = PublicConfig.verifyCookies(request);
-//        if (x==true){
+        if (x==true){
             List<User> userList = sqlSessionTemplate.selectList("getUserInfo",user);
             log.info("getUserInfo获取的用户数量是"+userList.size());
             return userList;
-//        }else {
-//            return null;
-//        }
+        }else {
+            return null;
+       }
     }
 }

@@ -43,7 +43,7 @@
         </trim>;
     </select>
     <!--获取更新之后的数据-->
-    <select id="getUpdateUserInfo" parameterType="com.course.model.UpdateUserInfoCase" resultType="com.course.model.UpdateUserInfoCase">
+    <select id="getUpdateUserInfo" parameterType="com.course.model.UpdateUserInfoCase" resultType="com.course.model.User">
         select * from user
         <trim prefix="WHERE" prefixOverrides="and">
             <if test="null != userName and '' != userName">
@@ -61,7 +61,7 @@
             <if test="null != isDelete and '' != isDelete">
                 AND isDelete=#{isDelete}
             </if>
-        </trim>
+        </trim>;
     </select>
     <!--添加用户-->
     <select id="addUser" parameterType="com.course.model.AddUserCase" resultType="com.course.model.User">

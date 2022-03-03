@@ -14,7 +14,7 @@ public class PublicConfig {
             return false;
         }
         for (Cookie cookie:cookies){
-            if (cookie.getName().equals("true")&&cookie.getValue().equals("true")){
+            if (cookie.getName().equals("login")&&cookie.getValue().equals("true")){
                 log.info("cookies验证通过");
                 return true;
             }

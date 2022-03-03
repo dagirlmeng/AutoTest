@@ -24,7 +24,7 @@ public class UpdateUserInfoTest {
         System.out.println(TestConfig.updateUserInfoUrl);
         int result=getResult(updateUserInfoCase);
         Thread.sleep(3000);
-        User user = sqlSession.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
+        User user = DataBaseUtil.getSqlSession().selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
         Assert.assertNotNull(user);
         Assert.assertNotNull(result);
     }
@@ -37,7 +37,7 @@ public class UpdateUserInfoTest {
         System.out.println(TestConfig.updateUserInfoUrl);
         int result=getResult(updateUserInfoCase);
         Thread.sleep(3000);
-        User user = sqlSession.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
+        User user = DataBaseUtil.getSqlSession().selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
         Assert.assertNotNull(user);
         Assert.assertNotNull(result);
     }

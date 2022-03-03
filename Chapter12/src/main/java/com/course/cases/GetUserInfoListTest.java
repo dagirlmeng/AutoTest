@@ -16,6 +16,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 
 public class GetUserInfoListTest {
@@ -33,11 +34,11 @@ public class GetUserInfoListTest {
             System.out.println("获取的user:"+u.toString());
         }
         JSONArray jsonArray = new JSONArray(userList);
-        Assert.assertEquals(jsonArray.length(),resultJson);
+        Assert.assertEquals(jsonArray.length(),resultJson.length());
         for (int i=0;i<resultJson.length();i++){
             JSONObject except = (JSONObject) jsonArray.get(i);
             JSONObject acyual = (JSONObject) resultJson.get(i);
-            Assert.assertEquals(except,acyual);
+            Assert.assertEquals(except.toString(),acyual.toString());
         }
     }
 

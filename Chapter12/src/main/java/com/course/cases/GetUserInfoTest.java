@@ -33,9 +33,7 @@ public class GetUserInfoTest {
         List userList = new ArrayList();
         userList.add(user);
         JSONArray jsonArray = new JSONArray(userList);
-        JSONArray array = new JSONArray(result.getString(0));
-        Assert.assertEquals(jsonArray.toString(),array.toString());
-        //Assert.assertEquals(jsonArray,result);
+        Assert.assertEquals(jsonArray.get(0).toString(),result.get(0).toString());
 
     }
 
@@ -50,8 +48,7 @@ public class GetUserInfoTest {
         String result;
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         result= EntityUtils.toString(response.getEntity(),"utf-8");
-        List resultList = Arrays.asList(result);
-        JSONArray array = new JSONArray(resultList);
+        JSONArray array = new JSONArray(result);
         return  array;
     }
 }
